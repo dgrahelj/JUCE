@@ -208,10 +208,10 @@ void AudioDeviceManager::audioDeviceListChanged()
         {
             closeAudioDevice();
 
-            if (auto e = createStateXml())
-                initialiseFromXML (*e, true, preferredDeviceName, &currentSetup);
-            else
-                initialiseDefault (preferredDeviceName, &currentSetup);
+            // if (auto e = createStateXml())
+            //     initialiseFromXML (*e, true, preferredDeviceName, &currentSetup);
+            // else
+            //     initialiseDefault (preferredDeviceName, &currentSetup);
         }
 
         updateCurrentSetup();
